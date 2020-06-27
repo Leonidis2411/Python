@@ -1,0 +1,5 @@
+numList = list(map(int, input().split()))
+a2 = len(numList)
+numList.insert(0, numList[a2 - 1])
+a3 = numList.pop()
+print(*numList)

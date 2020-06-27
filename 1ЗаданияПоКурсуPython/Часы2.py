@@ -1,0 +1,11 @@
+N = int(input())
+sec = N % 60
+min = N // 60
+h = min // 60
+min1 = min % 60
+h1 = h % 24
+dsec = sec // 10
+ssec = sec % 10
+dmin = min1 // 10
+smin = min1 % 10
+print(str(h1), ':', str(dmin), str(smin), ':', str(dsec), str(ssec), sep='')

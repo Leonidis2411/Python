@@ -1,0 +1,19 @@
+# numList = [165,163,160,160,157,157,155,154]
+numList = list(map(int, input().split()))
+a2 = len(numList)
+if a2 % 2 != 0:
+    a2 = a2 - 1
+
+s1 = 0
+s2 = 0
+a1 = 0
+while a1 <= a2 - 1:
+    s1 = numList[a1]
+    s2 = numList[a1 + 1]
+    numList[a1 + 1] = s1
+    numList[a1] = s2
+    a1 += 2
+a1 = 0
+while a1 <= (len(numList) - 1):
+    print(numList[a1], end=' ')
+    a1 += 1
